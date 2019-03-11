@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    margin: 0 auto;
+    width: 50%;
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+}
+
+body{
+    
+}
+
+header{
+  background-color: #d16920;
+  color: white;
+  padding: 20px 2px;
+  font-size: 2em;
+  display: inline-block; 
+  margin: 5px;
+}
+
+section{
+    background-color: #ffe3c6;
+    color: #637d45;
+    max-width: 50%;
+    margin: 5px;
+}
+
+p{
+    padding: 10px;
+}
+
+p:last-child{
+    padding-bottom: 60px;
+}
+
+#random-number-holder{
+    background-color: #3cb374;
+    color: #642961;
+    margin: 5px;
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+#win-loss-holder{
+    background-color: #02feff;
+    color: #0093b9;
+    margin: 5px;
+    float: left;
+}
+
+#crystal-holder{
+    clear: both;
+    margin: 5px;
+}
+
+.crystal{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 3px;
+}
+
+.total-score{
+    background-color: #017d7e;
+    color: white;
+    margin: 5px;
+    width: 25%;
+    padding: 2px;
+    clear:both;
+    min-height: 20px;
+}
+
+#win-loss-reveal{
+    display: none;
+}
+
+
