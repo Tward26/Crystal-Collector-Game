@@ -5,21 +5,25 @@
 #container{
     margin: 0 auto;
     width: 50%;
+    min-height: 100vh;
     background-image: url("../images/background.png");
     background-repeat: repeat;
+    overflow: auto;
 }
 
 body{
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 header{
   background-color: #d16920;
   color: white;
-  padding: 20px 2px;
+  padding: 20px 5px;
   font-size: 2em;
   display: inline-block; 
   margin: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 section{
@@ -33,7 +37,7 @@ p{
     padding: 10px;
 }
 
-p:last-child{
+#long-bottom{
     padding-bottom: 60px;
 }
 
@@ -41,9 +45,12 @@ p:last-child{
     background-color: #3cb374;
     color: #642961;
     margin: 5px;
-    padding: 20px;
     float: left;
     width: 25%;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    text-align: center;
+    font-size: 2em;
 }
 
 #win-loss-holder{
@@ -51,18 +58,19 @@ p:last-child{
     color: #0093b9;
     margin: 5px;
     float: left;
+    text-align: center;
+    min-height: 108px;
 }
 
 #crystal-holder{
     clear: both;
-    margin: 5px;
 }
 
 .crystal{
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     float: left;
-    margin: 3px;
+    margin: 5px;
 }
 
 .total-score{
@@ -70,13 +78,38 @@ p:last-child{
     color: white;
     margin: 5px;
     width: 25%;
-    padding: 2px;
+    padding: 5px;
     clear:both;
     min-height: 20px;
+    text-align: center;
+}
+
+#total-score-holder{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 2em;
 }
 
 #win-loss-reveal{
     display: none;
+    text-align: center;
 }
+
+/*Media query for 768px screen and smaller */
+@media screen and (max-width: 768px) {
+    #container{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+/*Media query for 640px screen and smaller */
+@media screen and (max-width: 640px) {
+    section{
+        max-width: 75%;
+    }
+}
+
 
 

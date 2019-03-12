@@ -19,7 +19,6 @@ function randomTargetNumber() {
 //function for randomCrystal Number
 function randomCrystalNumber(arg) {
     arg = Math.floor(Math.random() * 12) + 1;
-    console.log(arg);
     return arg;
 }
 
@@ -66,22 +65,16 @@ $(".crystal").on("click", function () {
     else if ($(this).attr("value") === "blue") {
         totalNumber += crystalNumber2;
         $("#total-score-holder").text(totalNumber);
-        console.log("This is totalNumber: " + totalNumber);
-        console.log("This is targetNumber: " + targetNumber);
         winLossCheck();
     }
     else if ($(this).attr("value") === "yellow") {
         totalNumber += crystalNumber3;
         $("#total-score-holder").text(totalNumber);
-        console.log("This is totalNumber: " + totalNumber);
-        console.log("This is targetNumber: " + targetNumber);
         winLossCheck();
     }
     else if ($(this).attr("value") === "green") {
         totalNumber += crystalNumber4;
         $("#total-score-holder").text(totalNumber);
-        console.log("This is totalNumber: " + totalNumber);
-        console.log("This is targetNumber: " + targetNumber);
         winLossCheck();
     }
 });
